@@ -26,6 +26,7 @@ pipeline {
                 bat "npx ng build --configuration production"
             }
         }
+    }
         post {
             success {
                 echo "agular application build successfully"
@@ -34,5 +35,4 @@ pipeline {
                 echo "angular app build failed"
             }
         }
-    }
 }
