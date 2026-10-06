@@ -29,7 +29,7 @@ pipeline {
         stage("Deployment") {
             steps {
                 bat "del /q /s c:\\inetpub\\wwwroot\\angularapp\\*"
-                bat "xcopy /E /Y /I dist\\* c:\\inetpub\\wwwwroot\\angularapp\\"
+                bat "xcopy /E /Y /I dist\\MyApp\\browser\\* c:\\inetpub\\wwwwroot\\angularapp\\"
             }
         }
     }
